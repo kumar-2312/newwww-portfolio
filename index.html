@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kumar G | Portfolio</title>
+
+<style>
+:root {
+  --bg: #101820;
+  --panel: #182630;
+  --text: #f4f2ec;
+  --muted: #b3c0c5;
+  --gold: #e7b85c;
+  --teal: #7fd1c5;
+  --line: #30434d;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #101820;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 7%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+nav a:hover { color: var(--gold); }
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 25px;
+}
+
+.hero {
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: center;
+  gap: 35px;
+  padding: 45px 0;
+}
+
+.kicker {
+  color: var(--teal);
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(45px, 7vw, 78px);
+  line-height: 1.05;
+  margin: 20px 0;
+}
+
+.gold { color: var(--gold); }
+
+p, li { color: var(--muted); }
+
+.hero p { font-size: 18px; }
+
+.profile {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 240px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center 25%;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 17px;
+  margin: 8px 8px 0 0;
+  background: var(--gold);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+section { padding: 35px 0; }
+
+.section-head {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+
+.section-head small {
+  color: var(--teal);
+  letter-spacing: 2px;
+}
+
+h2 { font-size: 32px; margin: 5px 0; }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.date { color: var(--gold); font-weight: bold; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skills span {
+  background: #243943;
+  border: 1px solid #49606b;
+  padding: 7px 11px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact a { color: var(--teal); }
+
+footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .hero, .grid { grid-template-columns: 1fr; }
+  .hero { min-height: auto; }
+  nav { align-items: flex-start; }
+  nav a { margin: 5px 8px 5px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">KUMAR G.</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="about">
+  <div>
+    <div class="kicker">PROFESSIONAL PORTFOLIO · 2026</div>
+    <h1>Operations.<br>
+      <span class="gold">Accuracy.</span><br>
+      Growth.
+    </h1>
+    <p>
+      I'm Kumar G, a graduate with experience in data
+      management, customer support, documentation and
+      operational processes. I aim to grow in operations
+      or administrative support.
+    </p>
+    <a class="btn" href="#contact">Contact Me ↗</a>
+    <a class="btn outline" href="#experience">My Experience</a>
+  </div>
+
+  <div class="profile">
+    <div class="kicker">PROFESSIONAL PROFILE</div>
+
+    <img src="profile.jpg" alt="Kumar G Profile Photo">
+
+    <h2>Kumar G</h2>
+    <p>Data Management · Operations</p>
+    <p>Financial Accounting · Support</p>
+    <p>📍 Coimbatore, Tamil Nadu</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <small>01 / PROFILE</small>
+    <h2>About Me</h2>
+  </div>
+  <div class="card">
+    <p>
+      I have professional experience at Cognizant Technology
+      Solutions, working with customer data, client queries,
+      documentation and report generation. My B.Com with
+      Computer Application background and auditing exposure
+      support my interest in business operations and
+      administrative roles.
+    </p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-head">
+    <small>02 / CAREER</small>
+    <h2>Professional Experience</h2>
+  </div>
+
+  <div class="card">
+    <div class="date">MARCH 2025 – JUNE 2026</div>
+    <h3>Cognizant Technology Solutions</h3>
+    <p><strong>Process Executive · Coimbatore</strong></p>
+    <ul>
+      <li>Processed and verified customer data accurately.</li>
+      <li>Resolved client queries and supported customer satisfaction.</li>
+      <li>Handled data entry, documentation and reports.</li>
+      <li>Worked with team members to meet productivity targets.</li>
+      <li>Supported process efficiency and quality standards.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <small>03 / PRACTICAL LEARNING</small>
+    <h2>Internship</h2>
+  </div>
+
+  <div class="card">
+    <h3>Preliminary Understanding of Auditing Procedure</h3>
+    <p>
+      Internship under the guidance of CA K. Srinivasan,
+      Chartered Accountant.
+    </p>
+    <ul>
+      <li>Learned the basics of auditing procedures.</li>
+      <li>Collected, analyzed and recorded transactional data.</li>
+      <li>Prepared reports on project progress and results.</li>
+      <li>Maintained accurate records of activities.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-head">
+    <small>04 / EDUCATION</small>
+    <h2>Academic Background</h2>
+  </div>
+
+  <div class="card">
+    <div class="date">2021 – 2024</div>
+    <h3>B.Com with Computer Application</h3>
+    <p>
+      Dr. SNS Rajalakshmi College of Arts and Science,
+      Coimbatore
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head">
+    <small>05 / CAPABILITIES</small>
+    <h2>Skills & Certifications</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Technical Skills</h3>
+      <div class="skills">
+        <span>Financial Accounting in Tally</span>
+        <span>MS Excel</span>
+        <span>MS Word</span>
+        <span>Basic Taxation</span>
+        <span>Computer Skills</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Professional Skills</h3>
+      <div class="skills">
+        <span>Leadership</span>
+        <span>Problem Solving</span>
+        <span>Teamwork</span>
+        <span>Adaptability</span>
+        <span>Time Management</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Financial Accounting using Tally</li>
+        <li>MSME Design Thinking Training</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Languages & Interests</h3>
+      <p>Languages: Tamil, English</p>
+      <p>Interests: Playing cricket, driving</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <small>06 / CONTACT</small>
+    <h2>Let's Connect</h2>
+  </div>
+
+  <div class="card contact">
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:abinganesan@gmail.com">
+        abinganesan@gmail.com
+      </a>
+    </p>
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:9629813403">9629813403</a>
+    </p>
+    <p><strong>Location:</strong> Coimbatore, Tamil Nadu</p>
+    <p><strong>Career Interests:</strong> Operations and Administrative Support</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Kumar G · Professional Portfolio
+</footer>
+
+</body>
+</html>
